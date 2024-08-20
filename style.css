@@ -1,0 +1,217 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.head
+{
+    background-image: url('https://i.postimg.cc/kGGGR6rj/background.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
+.logo
+{
+    margin-left: 30px;
+}
+button
+{
+    color: white;
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.content
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: white;
+    font-size:30px;
+}
+.sidebar{
+    background:linear-gradient(#00545d,#000729);
+    border-left: 2px solid white;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 50px;
+    top: 0;
+}
+.sidebar img
+{
+    width: 25px;
+    height: 25px;
+}
+.useful-links
+{
+    position: absolute;
+    bottom: 10px;
+}
+.social-links
+{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.menu
+{
+    display: block;
+    width: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.social-links,.useful-links
+{
+    margin-left: 10px;
+}
+.bubbles
+{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.bubbles img{
+    animation: sample 7s linear infinite ;
+}
+@keyframes sample
+{
+   0%{
+    opacity: 0;
+    transform: translateY(0);
+   } 
+   50%{
+    opacity: 1;
+   }
+   75%{
+    opacity: 1;
+   }
+   100%{
+    opacity: 0;
+    transform: translateY(-90vh);
+   }
+}
+
+.bubbles img:nth-child(1)
+{
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(2)
+{
+    width: 50px;
+    animation-delay: 1.5s;
+}
+.bubbles img:nth-child(3)
+{
+    width: 60px;
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(4)
+{
+    width: 70px;
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(5)
+{
+    width: 80px;
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(6)
+{
+    width: 40px;
+    animation-delay: 7s;
+}
+
+@media  screen and (max-width:450px) {
+
+    .head{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/030/315/228/large_2x/water-drops-on-a-deep-blue-background-with-gradation-and-highlights-vertical-mobile-wallpaper-ai-generated-free-photo.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    }
+    .content{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: white;
+    font-size:15px;
+    }
+    .sidebar{
+        background:linear-gradient(#00545d,#000729);
+        border-left: 2px solid white;
+        position: absolute;
+        bottom: 0;
+        height: 50px;
+        width: 100%;
+        top: auto;
+    }
+    .useful-links{
+    position: absolute;
+    right: 0;
+    }
+    .social-links{
+    position: absolute;
+    margin-left: 130px;
+    }
+    .menu{
+        margin-top: 40px;
+        margin-left: 60px;
+        width: 20px;
+    }
+}
+
+@media screen and (min-width:451px) and (max-width:800px){
+    .head{
+        background-image: url('https://img.freepik.com/free-photo/shiny-bubbles-wallpaper_23-2150440487.jpg?size=626&ext=jpg&ga=GA1.1.352603755.1722356544&semt=ais_hybrid'); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+        }
+        .content{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        color: white;
+        font-size:15px;
+        }
+        .sidebar{
+            background:linear-gradient(#00545d,#000729);
+            border-left: 2px solid white;
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            width: 100%;
+            top: auto;
+        }
+        .useful-links{
+        position: absolute;
+        right: 0;
+        }
+        .social-links{
+        position: absolute;
+        margin-left: 350px;
+        }
+        .menu{
+            margin-top: 40px;
+            margin-left: 60px;
+            width: 20px;
+        }
+
+}
